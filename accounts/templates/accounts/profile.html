@@ -1,16 +1,16 @@
 {% extends 'home/base.html' %}
 {% load bootstrap_tags %}
 
+
 {% block content %}
 
-<h3>Register</h3>
+<h3>Profile</h3>
 
 <form method="POST">
 
-    {% csrf_token %}
-    {{ form | as_bootstrap }}
-    <input type="submit"    value="REGISTER">
+    You are logged in as {{ user }}
     
 </form>
+
 
 {% endblock content %}
